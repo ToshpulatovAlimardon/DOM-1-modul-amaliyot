@@ -12,7 +12,7 @@ genre.textContent = "COMEDY";
 wrapper.style.cssText =
   "background: url('../img/1.jpg') center bottom/cover no-repeat;";
 
-seriesDb = {
+const seriesDb = {
   series: [
     "Omar",
     "The Final Legacy",
@@ -22,13 +22,11 @@ seriesDb = {
   ],
 };
 
-seriesList.innerHTML = "";
-
 seriesDb.series.forEach((item, indx) => {
   seriesList.innerHTML += `
-  <li class="promo__interactive-item">
-    ${indx+1}. ${item}
-    <div class="delete"></div>
-  </li>
+    <li class="promo__interactive-item">
+      ${indx + 1}. ${item}
+      <div class="delete"></div>
+    </li>
   `;
 });
